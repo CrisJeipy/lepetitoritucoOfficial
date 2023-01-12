@@ -1,0 +1,838 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-image: radial-gradient(circle, #2f2222, #2d2020, #2b1e1e, #291c1c, #271a1a);
+}
+
+.ourtime__container {
+   
+    width: 100%;
+    background-color: #292929;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    font-family: 'Open Sans';
+    font-size: 20px;
+    font-weight: 300;
+    color: #D9D9D9;
+   
+    z-index: 100;
+    height: 90px;
+    padding: 20px;
+}
+
+.ourtime__text {
+    margin-bottom: 20px;
+}
+
+
+
+.e-mail  {
+    color: #D9D9D9;
+    
+}
+
+
+.nav__main {
+    height: 60px;
+    padding: 5px;
+    padding-bottom: 10px;
+    position: fixed;
+    top: 3%;
+    z-index: 99;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #D9B602;
+    opacity: 0.9;
+
+
+    height: 60px;
+    padding: 5px;
+    padding-bottom: 10px;
+    position: fixed;
+    top: 93.5%;
+    bottom: 0;
+    z-index: 99;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #D9B602;
+    opacity: 0.9;
+}
+
+.nav__main ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-self: center;
+}
+
+.nav__main li {
+    display: flex;
+    
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    width: auto;
+    
+    
+box-shadow: inset 0px 6px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.nav__main li a {
+    font-size: 14px;
+    font-family: 'Open Sans';
+    text-decoration: none;
+    
+    color: #000000;
+}
+
+.fr {
+    color: #333;
+    background-image: url('./francia\ \(1\).png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+.en {
+    color: #1755F4;
+    background-image: url('./united-states.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+#language-choiced
+{
+    background-color: #2F2222;
+    
+    border: 1px solid #1755F4;
+    
+    display: flex;
+   
+    width: 100px;
+    flex-grow: 0;
+    
+}
+
+
+
+
+.check {
+    position: absolute;
+    width: 0px;
+    right: 42%;
+    
+    
+}
+
+.check:before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    background-color: #333;
+    border-radius: 25px;
+   
+}
+
+.check:after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    
+    
+    
+    background: #fff;
+    border-radius: 25px;
+    transition: 0.25;
+    border: 2px solid #333;
+    box-sizing: border-box; 
+}
+
+.check:checked:after {
+    left: 46px;
+    
+    
+    
+    border: 2px solid #1755F4;
+}
+
+.check:checked:before {
+    background: #1755F4;
+    
+    
+}
+
+
+main {
+
+    text-align: center;
+    height: 80vh;
+    min-width: 280px;
+}
+
+.main-image__container {
+    position: relative;
+}
+
+.main__image {
+    background-image: url('./background__arepa.jpg');
+    background-size:cover;
+    
+   
+    background-position: top;
+    
+  
+    background-repeat: no-repeat;
+    min-width: 280px;
+    max-width: 768px;
+    min-height: 400px;
+
+    opacity: 40%;
+    
+    
+    
+    mix-blend-mode: difference;
+    filter:sepia(30%);
+
+}
+
+.circles {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 280px;
+    height: auto;
+    align-items: center;
+    position: relative;
+    top: -300px;
+    
+
+    
+   
+    
+}
+
+.button-container {
+    margin-bottom: 20px;
+    width:  70px;
+    height: 70px;
+    padding: 10px;
+    
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Pacifico';
+    font-size: 14px;
+    font-weight: lighter;
+    color: #271a1a;
+    position: relative;
+
+    
+
+
+}
+
+.amarillo {
+    background-color: #D9B602;
+}
+
+.azul {
+    background-color: #1755F4;
+}
+
+.rojo {
+    background-color: #E32C04;
+}
+
+
+.main-title {
+    position: relative;
+    top: 20px;
+    width: 280px;
+}
+
+
+
+
+.threearepas__section {
+    min-width: 280px;
+    text-align: center;
+    
+    
+    min-height: 400px;
+    
+    
+    
+}
+
+.threearepas__section .threearepas__image__container {
+    
+    height: 200px;
+    position: relative;
+}
+
+.threearepas__image__container p {
+    position: absolute;
+    left: 20%;
+    top: 25%;
+
+    z-index: 9;
+
+    color: #D9B602;
+}
+
+.threearepas__section .threearepas__image {
+    background-image: url('./tres-arepas.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+    min-width: 280px;
+    height: 200px;
+    
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.threearepas__section p {
+    width: 200px;
+    height: auto;
+    margin: auto;
+  
+    font-family: 'Pacifico';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    
+}
+
+
+
+.banner {
+    background-image: url('./banner2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 280px;
+    height: 200px;
+    
+}
+
+.menu__slider {
+    text-align: center;
+    width: 100%;
+    height: 1000px;
+    margin-bottom: 300px;
+    margin-top: 150px;
+    
+
+    
+}
+
+.slider__container {
+    text-align: center;
+    width: 100%;
+    height: 1000px;
+    
+    
+}
+
+
+
+
+
+.product__image__container {
+    width: 100vw;
+    height: auto;
+    margin: auto;
+    margin-bottom: 70px;
+    position: relative;
+    margin-right: 20px;
+
+    scroll-snap-align: center;
+    
+
+    
+}
+
+
+
+
+.reina-pepiada  {
+    background-image: url('./reina_pepiada-removebg-preview.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  
+    display: flex;
+    position: relative;
+    
+    top: 10%;
+    display: inline-block;
+
+    min-width: 250px;
+    min-height: 150px;
+    
+    
+}
+
+
+
+
+
+.pelua  {
+    background-image: url('./pelua2-removebg-preview.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  
+    display: flex;
+    position: relative;
+    
+    top: 10%;
+    display: inline-block;
+
+    min-width: 280px;
+    min-height: 190px;
+    
+    
+}
+
+
+.catira  {
+    background-image: url('./catira2-removebg-preview.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  
+    display: flex;
+    position: relative;
+    
+    top: 10%;
+    display: inline-block;
+
+    min-width: 280px;
+    min-height: 190px;
+    
+    
+}
+
+.product__image__container h2 {
+    font-family: 'Pacifico';
+    font-size: 32px;
+    font-weight: 500;
+    color: #D9B602;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    position: absolute;
+    width: auto;
+    display: inline;
+    top: 90%;
+    left: 20%;
+    
+
+
+}
+
+
+#catira-title {
+    font-family: 'Pacifico';
+    font-size: 32px;
+    font-weight: 500;
+    color: #D9B602;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    position: absolute;
+    width: auto;
+    display: inline;
+    top: 88%;
+    left: 35%;
+}
+
+
+
+#pelua-title {
+
+    font-family: 'Pacifico';
+    font-size: 32px;
+    font-weight: 300;
+    color: #D9B602;
+    margin-top: 30px;
+    position: absolute;
+    left: 40%;
+    top: 88%;
+}
+
+
+
+
+.arrow-left  {
+    position: absolute;
+    left: 8%;
+    bottom: 7%;
+    display: none;
+    
+    
+    
+}
+
+.arrow-right {
+    position: absolute;
+    
+    right: 8%;
+    bottom: 7%;
+    display: none;
+    
+}
+
+.menu__slider h2 {
+    font-family: 'Pacifico';
+    font-size: 24px;
+    font-weight: 300;
+    color: #D9B602;
+    margin-top: 30px;
+}
+
+
+.ingredientes {
+    width: 100vw;
+    height: auto;
+}
+
+
+.ingredientes .ingredientes__box {
+    margin-top: 50px;
+    min-width: 270px;
+    height: auto;
+    padding: 20px;
+    background-color: #ffffff10;
+    backdrop-filter: blue(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.ingredientes .ingredientes__box p {
+    font-family: 'Open Sans';
+    font-size: 14px;
+    line-height: 19.07px;
+    font-weight: 400;
+    color: #D9D9D9;
+    
+}
+
+.ingredientes__box h3 {
+    color: #D9B602;
+}
+
+#product__description {
+    margin-bottom: 20px;
+}
+
+
+/*Slider 3D*/
+
+
+
+.figuras {
+    width: inherit;
+    height: inherit;
+    position: relative;
+    min-width: 280px;
+    height: 500px;
+    position: absolute;
+    
+    
+    
+}
+
+
+.rectangulo {
+    /* Rectangle 13 */
+
+ position: absolute;
+ left: 0%;
+
+overflow: hidden;
+z-index: 0;
+min-width: 280px;
+
+}
+
+.abajo {
+    position: absolute;
+    left: 0%;
+    bottom: -50px;
+   
+    min-width: 280px;
+}
+
+
+.anterior {
+    position: absolute;
+    z-index: 20;
+    font-size: 38px;
+    top: -11%;
+    left: 3%;
+    width: 210px;
+    height: 110px;
+    opacity: 0;
+    
+}
+
+.siguiente {
+    position: absolute;
+    z-index: 20;
+    top: 56%;
+    left: 5%;
+    font-size: 38px;
+    width: 210px;
+    height: 110px;
+    opacity: 0;
+    padding: 0px;
+  
+}
+
+.sweets__section {
+    width: 100%;
+    height: auto;
+    margin-top: 750px;
+    margin-bottom: 100px;
+    position: static;
+    top: 20px;
+    
+    
+}
+
+.gallery {
+    width: 100%;
+    text-align: center;
+    margin-top: 300px;
+    background-color: #251c1c;
+    z-index: 99;
+    opacity: 1;
+ 
+}
+
+.dulces-title {
+    font-size: 32px;
+    font-weight: lighter;
+    font-family: 'Pacifico';
+    color: #D9D9D9;
+    margin-bottom: 70px;
+    margin-top: 100px;
+    z-index: 99;
+    
+}
+
+
+.gallery button {
+    display: none;
+}
+
+
+
+.gallery-container {
+    margin: auto;
+    width: 100%;
+    height: 600px;
+    display: inline;
+    gap: 50px;
+}
+
+.gallery-item {
+    min-width: 280px;
+    max-height: 400px;
+    padding: 30px;
+    border: 1px solid red;
+    border-radius: 5px;
+    background-color: #D9B602;
+   
+}
+
+
+
+.gallery-item .estrellas {
+    position: relative;
+    bottom: 20px;
+    left: 10px;
+}
+
+.gallery-item {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  
+}
+
+.text__background {
+    width: 100%;
+    height: auto;
+    font-family: 'Pacifico';
+    color: #292929;
+    font-weight: lighter;
+    background-color: #ffffff3a;
+    backdrop-filter: blue(12px);
+    -webkit-backdrop-filter: blur(12px); 
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.gallery-item h3  {
+border-bottom: 1px solid #E32C04;
+}
+
+
+
+
+
+
+.tresleche {
+    background-image: url('./tresleche.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 130px;
+    height: 130px;
+    position: relative;
+    
+   
+    
+}
+
+.chesscake {
+    background-image: url('./chesscake.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 130px;
+    height: 130px;
+    position: relative;
+    
+}
+
+.gallery-item:hover {
+    background-color: #d9b502e7;
+    transform: scale(0.9);
+    transition: ease-in 0.8s;
+    transform: rotate(360deg);
+    transform-style: preserve-3d;
+-webkit-transform: rotate(360deg);
+}
+
+
+
+footer {
+    min-width: 280px;
+    
+    background-color: #292929;
+    
+    min-height: 180px;
+    opacity: 1;
+    margin-bottom: 45px;
+    display: flex;
+
+    padding: 30px;
+
+   
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 0px;
+    text-align: center;
+    
+
+    
+}
+
+.icon {
+    display: inline-block;
+
+    margin-bottom: 30px;
+
+    
+    
+  
+}
+
+.e-mail {
+    display: none;
+}
+
+.icons {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.whatsapp {
+    background-image: url('./instagram.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 36px;
+    height: 36px;
+    color: #1755F4;
+}
+
+.instagram {
+
+    background-image: url('./whatsapp\ \(1\).svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 36px;
+    height: 36px;
+    
+}
+
+.facebook {
+    background-image: url('./facebook.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 36px;
+    height: 36px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #D9D9D9;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 0px 16px 4px rgba(0, 0, 0, 0.25);
+}
+
+footer span b {
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 17px;
+    color: #D9D9D9;
+    text-shadow: 0px 16px 4px rgba(0, 0, 0, 0.25);
+    font-style: normal;
+    margin-top: 10px;
+    margin-bottom: 40px;
+   text-align:center;
+    
+}

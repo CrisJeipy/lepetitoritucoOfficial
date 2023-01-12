@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        .container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+}
+
+svg {
+    width: 400px;
+}
+    </style>
+
+    <div class="container">
+        <svg width="600px" version="1.1" id="my-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1366 768" 
+           style="enable/background:new 0 0 1366 768;" xml:space="preserve">
+            <style type="text/css">
+                .st0{fill:none;stroke:#606060;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                .st1{fill:none;stroke:#BF0404;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+            </style>
+            <g >
+                <g>
+                   <path class="st0" d="M266.9,159.8c0,0-9.3,4.4-9.3,14.6c0,11.1,0,9.3,0,101.5c0,0-4.8,41.5-65.5,41.5c-61.2,0-66-41.5-66-41.5
+                   s0-91.3,0-101.5s-9.3-14.6-9.3-14.6H266.9z"/>
+                   <polygon id="fill2" class="st1" points="195.8,282 195.8,262.4 232.2,269.9 220.5,258.4 246.3,238.7 237.3,233.9 247.1,218.1 227.5,221.3
+                   228.7,208.2 215,216.1 219.7,190.8 204.4,197.5 191.9,173 179.4,197.5 164.1,190.8 168.8,216.1 155.1,208.2 156.3,221.3
+                   136.7,218.1 146.5,233.9 137.5,238.7 163.3,258.4 151.6,269.9 188,262.4 188,282"/>
+                </g>
+            </g>
+        </svg>
+         </div>
+
+         <script>
+            var vivus;
+            var mysvg = new Vivus('my-svg', {duration: 200, type: 'delayed',}, function() {
+             });
+            </script>
+
+
+<script src="js/vivus.js"></script>
+</body>
+</html>
